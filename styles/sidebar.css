@@ -1,0 +1,182 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-right: solid;
+  border-color: rgb(38, 38, 38);
+  background-color: black;
+  border-width: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+}
+
+.instagram-button,
+.home-button,
+.search-button,
+.explore-button,
+.reels-button,
+.messenger-button,
+.notifications-button,
+.new-post-button,
+.profile-button,
+.more-button {
+  display: flex;
+  border: none;
+  border-radius: 20%;
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.instagram-button:hover,
+.home-button:hover,
+.search-button:hover,
+.explore-button:hover,
+.reels-button:hover,
+.messenger-button:hover,
+.notifications-button:hover,
+.new-post-button:hover,
+.more-button:hover,
+.profile-button:hover {
+  background-color: rgb(38, 38, 38);
+}
+
+.home-button,
+.search-button,
+.explore-button,
+.reels-button,
+.messenger-button,
+.notifications-button,
+.new-post-button,
+.profile-button {
+  margin-top: 8px;
+}
+
+.my-profile-pic {
+  width: 24px;
+  border-radius: 50%;
+}
+
+.home-button {
+  margin-top: 32px;
+}
+
+.number-of-messages {
+  background-color: rgb(241, 71, 41);
+  padding: 1px 6px 1px 6px;
+  font-size: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.number-of-notifications {
+  background-color: rgb(241, 71, 41);
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.button-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.button-name,
+.button-name-Home{
+  display: none;
+}
+
+.instagram-button{
+  transition: display;
+}
+
+@media (min-width: 1262px) {
+  .sidebar {
+    width: 244px;
+    position: fixed;
+    align-items: normal;
+  }
+
+  .instagram-button {
+    display: none;
+  }
+
+  .instagram-logo{
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .home-button,
+  .search-button,
+  .explore-button,
+  .reels-button,
+  .messenger-button,
+  .notifications-button,
+  .new-post-button,
+  .profile-button,
+  .more-button {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 90%;
+    right: 10px;
+    left: 12px;
+    height: 56px;
+    margin: 0;
+    align-items: center;
+    justify-content: start;
+    transition: background-color 0.25s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .first-buttons{
+    column-gap: 10px;
+  }
+
+  .button-name{
+    display: contents;
+  }
+
+  .button-name-Home{
+    display: contents;
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width: 1261px) {
+
+  .instagram-logo {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  padding-top: 38px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 769px) {
+  .header {
+    padding-left: 58px;
+  }
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 17px 0 0;
+}
+
+.story-image {
+  width: 55px;
+  border-radius: 50%;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.story-author {
+  margin: 3px 0 0 0;
+  font-size: 13px;
+}

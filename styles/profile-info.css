@@ -1,0 +1,51 @@
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  position: absolute;
+  top: 50px;
+  right: 8%;
+}
+
+.profile-info .my-profile {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  width: 280px;
+}
+
+.names{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.names p{
+  margin: 0;
+}
+
+.real-name{
+  color: gray;
+}
+
+.my-name{
+  color: white;
+  font-weight: bold;
+}
+
+.switch{
+  border: none;
+  background-color: transparent;
+  color: rgb(63, 143, 255);
+}
+
+@media (max-width: 1261px){
+  .profile-info{
+    display: none;
+  }
+}
